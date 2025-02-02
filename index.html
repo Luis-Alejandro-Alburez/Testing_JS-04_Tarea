@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor de Medidas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convertidor de Medidas</h1>
+      <div class="input-group">
+        <input type="number" id="cantidad" placeholder="Ingrese la cantidad" />
+        <select id="medida">
+          <option value="metros">Metros</option>
+          <option value="centimetros">Centímetros</option>
+          <option value="milimetros">Milímetros</option>
+        </select>
+      </div>
+      <button id="convertir">Convertir</button>
+      <div class="resultados">
+        <div class="conversion" id="metros-conversion">
+          <img src="resources/metro icon.png" alt="Metros" />
+          <p id="metros">0 Metros</p>
+        </div>
+        <div class="conversion" id="centimetros-conversion">
+          <img src="resources/centímetro icon.png" alt="Centímetros" />
+          <p id="centimetros">0 Centímetros</p>
+        </div>
+        <div class="conversion" id="milimetros-conversion">
+          <img src="resources/milímetro icon.png" alt="Milímetros" />
+          <p id="milimetros">0 Milímetros</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
